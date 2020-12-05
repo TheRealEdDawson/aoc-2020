@@ -4,7 +4,8 @@
 # 1-3 a: abcde
 # 1-3 b: cdefg
 # 2-9 c: ccccccccc
-# Each line gives the password policy and then the password. The policy shows a range, being the lowest and highest number of the given letter are allowed in the password.
+# Each line gives the password policy and then the password. The policy shows a range, being the lowest 
+#and highest number of the given letter are allowed in the password.
 
 import sys
 import string
@@ -49,7 +50,9 @@ for line in f:
     counter = 0
 print ("\n\nThere were", validpasswordcount, "valid passwords (part 1).\n")
 validpasswordcount = 0
-#Part 2 problem: the policy now means that the given character must occur in either the first character position or the second position of the string based on the "range" data point. Also, the given character cannot occur at both specified locations.
+#Part 2 problem: the policy now means that the given character must occur in either the first 
+#character position or the second position of the string based on the "range" data point. 
+#Also, the given character cannot occur at both specified locations.
 
 #Part 2 Solution
 f = open("z_day-2-data.txt", "r")
